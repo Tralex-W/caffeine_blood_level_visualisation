@@ -1,45 +1,12 @@
 {
-  "caffeine_half_life_hours": 5,
-  "caffeine_per_milliliter_mg": [
-    {
-      "drink": "filter-coffee",
-      "caffeine_mg_per_ml": 0.5
-    },
-    {
-      "drink": "espresso",
-      "caffeine_mg_per_ml": 2.3
-    },
-    {
-      "drink": "cappuccino",
-      "caffeine_mg_per_ml": 0.35
-    },
-    {
-      "drink": "coffee",
-      "caffeine_mg_per_ml": 0.3
-    },
-    {
-      "drink": "black-tea",
-      "caffeine_mg_per_ml": 0.25
-    },
-    {
-      "drink": "green-tea",
-      "caffeine_mg_per_ml": 0.15
-    },
-    {
-      "drink": "cola",
-      "caffeine_mg_per_ml": 0.1
-    },
-    {
-      "drink": "energy-drink",
-      "caffeine_mg_per_ml": 0.32
-    },
-    {
-      "drink": "mate-drink",
-      "caffeine_mg_per_ml": 0.25
-    },
-    {
-      "drink": "cocoa",
-      "caffeine_mg_per_ml": 0.04
-    }
-  ]
+  "filter-coffee": 0.5,
+  "espresso": 2.3,
+  "cappuccino": 0.35,
+  "coffee": 0.3,
+  "black-tea": 0.25,
+  "green-tea": 0.15,
+  "cola": 0.1,
+  "energy-drink": 0.32,
+  "mate-drink": 0.25,
+  "cocoa": 0.04
 }
