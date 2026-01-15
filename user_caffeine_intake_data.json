@@ -2,15 +2,14 @@
   "users": [
     {
       "name": "Eric",
-      "tolerance": 2,
       "caffeine_intake": [
         {
-          "time": "10:00",
+          "time": "10.00",
           "amount_ml": 200,
           "source": "coffee"
         },
         {
-          "date": "13:00",
+          "date": "13.00",
           "amount": 150,
           "source": "tea"
         }
@@ -18,15 +17,14 @@
     },
     {
       "name": "Lisanne",
-      "tolerance": 3,
       "caffeine_intake": [
         {
-          "time": "11:00",
+          "time": "11.00",
           "amount_ml": 100,
           "source": "coffee"
         },
         {
-          "date": "14:00",
+          "date": "14.00",
           "amount": 200,
           "source": "tea"
         }
