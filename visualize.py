@@ -6,10 +6,10 @@ import numpy as np
 with open("user_caffeine_intake_data.json", "r") as f:
     user_caffeine_intake = json.load(f)
 with open("beverage_data.json", "r") as f:
-    beverages = json.load(f)  # Beverage:Coffein per ml
+    beverages = json.load(f)  # Beverage:Coffein mg per ml
 
 
-# caffeine_intake_ml = caffeine in ml at time 0
+# caffeine_intake_mg = caffeine in mg at time 0
 decay_constant = 0.1385  # decay_constant = 0.1385 = ln2/5, because of T1/2=ln2/k=5
 
 
@@ -46,9 +46,10 @@ amount_of_beverage_ml = user_caffeine_intake["users"][user_idx]["caffeine_intake
 beverage = user_caffeine_intake["users"][user_idx]["caffeine_intake"][
     caffeine_intake_idx
 ]["source"]
-beverage_caffeine_concentration_ml = beverages[beverage]
-amount_of_caffeine_ml = beverage_caffeine_concentration_ml * amount_of_beverage_ml
+beverage_caffeine_concentration_mg_per_ml = beverages[beverage]
+amount_of_caffeine_mg = (
+    beverage_caffeine_concentration_mg_per_ml * amount_of_beverage_ml
+)
 
-print(amount_of_caffeine_ml)
 
-visualize_caffeine_concentration_over_time(amount_of_caffeine_ml, intake_time, user)
+visualize_caffeine_concentration_over_time(amount_of_caffeine_mg, intake_time, user)
