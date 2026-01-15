@@ -3,7 +3,7 @@
     {
       "name": "Eric",
       "tolerance": 2,
-      "coffeine_intake": [
+      "caffeine_intake": [
         {
           "time": "10:00",
           "amount_ml": 200,
@@ -19,7 +19,7 @@
     {
       "name": "Lisanne",
       "tolerance": 3,
-      "coffeine_intake": [
+      "caffeine_intake": [
         {
           "time": "11:00",
           "amount_ml": 100,
