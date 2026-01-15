@@ -9,9 +9,9 @@
           "source": "coffee"
         },
         {
-          "date": "13.00",
-          "amount": 150,
-          "source": "tea"
+          "time": "13.00",
+          "amount_ml": 150,
+          "source": "green-tea"
         }
       ]
     },
@@ -24,9 +24,9 @@
           "source": "coffee"
         },
         {
-          "date": "14.00",
-          "amount": 200,
-          "source": "tea"
+          "time": "14.00",
+          "amount_ml": 200,
+          "source": "green-tea"
         }
       ]
     }
