@@ -3,15 +3,19 @@
   "caffeine_per_milliliter_mg": [
     {
       "drink": "filter-coffee",
-      "caffeine_mg_per_ml": 0.50
+      "caffeine_mg_per_ml": 0.5
     },
     {
       "drink": "espresso",
-      "caffeine_mg_per_ml": 2.30
+      "caffeine_mg_per_ml": 2.3
     },
     {
       "drink": "cappuccino",
       "caffeine_mg_per_ml": 0.35
+    },
+    {
+      "drink": "coffee",
+      "caffeine_mg_per_ml": 0.3
     },
     {
       "drink": "black-tea",
@@ -23,7 +27,7 @@
     },
     {
       "drink": "cola",
-      "caffeine_mg_per_ml": 0.10
+      "caffeine_mg_per_ml": 0.1
     },
     {
       "drink": "energy-drink",
