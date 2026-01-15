@@ -1,17 +1,27 @@
 {
   "users": [
     {
-      "name": "Eric",
+      "name": "Magda",
       "caffeine_intake": [
         {
-          "time": "10.00",
-          "amount_ml": 200,
-          "source": "coffee"
+          "time": "9.00",
+          "amount_ml": 100,
+          "source": "jura"
+        },
+        {
+          "time": "11.00",
+          "amount_ml": 100,
+          "source": "jura"
         },
         {
           "time": "13.00",
-          "amount_ml": 150,
-          "source": "green-tea"
+          "amount_ml": 100,
+          "source": "jura"
+        },
+        {
+          "time": "15.00",
+          "amount_ml": 100,
+          "source": "jura"
         }
       ]
     },
@@ -21,7 +31,7 @@
         {
           "time": "11.00",
           "amount_ml": 100,
-          "source": "coffee"
+          "source": "lungo"
         },
         {
           "time": "14.00",

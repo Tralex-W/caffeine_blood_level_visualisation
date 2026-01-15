@@ -10,20 +10,28 @@ with open("beverage_data.json", "r") as f:
 
 
 # caffeine_intake_mg = caffeine in mg at time 0
-CAFFEINE_HALF_LIFE_H = 5
+CAFFEINE_HALF_LIFE_H = 4
 DECAY_CONSTANT = np.log(2) / CAFFEINE_HALF_LIFE_H  # because of T1/2=ln2/k=5
 WINDOW_WIDTH = 12
 WINDOW_HEIGHT = 6
-X_LINSPACE = np.linspace(0, 24, 100)
+X_LINSPACE = np.linspace(0, 50, 100)
+ABSORBATION_RATE = 1
 cumulative_caffeine_plot = np.zeros_like(X_LINSPACE)
 
 
 def plot_caffeine_concentration_over_time_for_one_intake(
-    caffeine_intake_ml, intake_time, label, show_individual=True
+    caffeine_intake_mg, intake_time, label, show_individual=True
 ):
-    global DECAY_CONSTANT, X_LINSPACE, cumulative_caffeine_plot
+    global DECAY_CONSTANT, X_LINSPACE, ABSORBATION_RATE, cumulative_caffeine_plot
 
-    y = caffeine_intake_ml * np.exp(-DECAY_CONSTANT * (X_LINSPACE - intake_time))
+    y = (
+        (caffeine_intake_mg * ABSORBATION_RATE)
+        / (ABSORBATION_RATE - DECAY_CONSTANT)
+        * (
+            np.exp(-DECAY_CONSTANT * (X_LINSPACE - intake_time))
+            - np.exp(-ABSORBATION_RATE * (X_LINSPACE - intake_time))
+        )
+    )
 
     cumulative_caffeine_plot += np.where(X_LINSPACE >= intake_time, y, 0)
 
@@ -44,7 +52,13 @@ def visualize_caffeine_concentration_for_all_caffein_intakes_of_a_user(
     user = user_caffeine_intake["users"][user_idx]["name"]
     plt.figure(figsize=(WINDOW_WIDTH, WINDOW_HEIGHT))
 
-    for caffeine_intake_idx in range(0, 2):  # each caffeine intake
+    number_of_caffein_intakes = len(
+        user_caffeine_intake["users"][user_idx]["caffeine_intake"]
+    )
+
+    for caffeine_intake_idx in range(
+        0, number_of_caffein_intakes
+    ):  # each caffeine intake
         intake_time = float(
             user_caffeine_intake["users"][user_idx]["caffeine_intake"][
                 caffeine_intake_idx

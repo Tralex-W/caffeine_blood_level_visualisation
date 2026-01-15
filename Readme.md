@@ -32,7 +32,7 @@ The script will show a plot of:
 ## How It Works
 
 * Each intake is converted from **ml beverage → mg caffeine** using `beverage_data.json`.
-* Caffeine decay is modeled as **exponential decay** with half-life `5h`.
+* Caffeine decay is modeled as **1-Kompartiment with absorbation and decay** with a half-life of `4h`, a absorption rate of `1/h`, and a decay rate of `ln2/4`
 * Curves are summed to show total caffeine in the body over time.
 
 ## Customization

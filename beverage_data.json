@@ -1,12 +1,18 @@
 {
-  "filter-coffee": 0.5,
-  "espresso": 2.3,
-  "cappuccino": 0.35,
-  "coffee": 0.3,
-  "black-tea": 0.25,
+  "espresso": 2.1,
+  "lungo": 1.1,
+  "jura": 0.7,
+  "filter-coffee": 0.45,
+  "instant-coffee": 0.26,
+  "cappuccino": 0.57,
+  "black-tea": 0.24,
   "green-tea": 0.15,
   "cola": 0.1,
   "energy-drink": 0.32,
-  "mate-drink": 0.25,
-  "cocoa": 0.04
+  "energy-shot": 3.33,
+  "mate-drink": 0.2,
+  "matcha-tea": 0.28,
+  "iced-tea": 0.1,
+  "chocolate-milk": 0.02,
+  "hot-cocoa": 0.03
 }
