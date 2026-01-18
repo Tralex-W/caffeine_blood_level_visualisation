@@ -14,7 +14,7 @@ CAFFEINE_HALF_LIFE_H = 4
 DECAY_CONSTANT = np.log(2) / CAFFEINE_HALF_LIFE_H  # because of T1/2=ln2/k=5
 WINDOW_WIDTH = 12
 WINDOW_HEIGHT = 6
-X_LINSPACE = np.linspace(0, 50, 100)
+X_LINSPACE = np.linspace(0, 24, 100)
 ABSORBATION_RATE = 1
 cumulative_caffeine_plot = np.zeros_like(X_LINSPACE)
 
